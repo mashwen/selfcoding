@@ -16,4 +16,13 @@ public class TokenUtil {
      //base64编码格式
      return PassUtil.base64Enc(buffer.toString(),"UTF-8");
     }
+    public static int parseToken(String token){
+        String msg=PassUtil.base64Dec(token,"UTF-8");
+        String[] arr=msg.split(",");
+        if(arr!=null && arr.length==4) {
+            return Integer.parseInt(arr[0]);
+        }else {
+            return -1;
+        }
+    }
 }

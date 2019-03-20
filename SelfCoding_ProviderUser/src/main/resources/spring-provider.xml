@@ -13,5 +13,5 @@
     <!--3、传输协议-->
     <dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
     <!--4、发布服务-->
-    <dubbo:service interface="com.feri.service.user.UserService" ref="userProvider"></dubbo:service>
+    <dubbo:service interface="com.feri.service.user.UserService" ref="userprovider"></dubbo:service>
 </beans>

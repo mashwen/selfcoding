@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feri.dao.user.AwardlogMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.feri.entity.user.Awardlog">
+		<id column="id" property="id" />
+		<result column="uwid" property="uwid" />
+		<result column="coins" property="coins" />
+		<result column="startdate" property="startdate" />
+		<result column="enddate" property="enddate" />
+		<result column="validity" property="validity" />
+		<result column="type" property="type" />
+		<result column="createtime" property="createtime" />
+	</resultMap>
+
+</mapper>

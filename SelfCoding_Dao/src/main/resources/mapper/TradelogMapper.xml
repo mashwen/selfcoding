@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feri.dao.pay.TradelogMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.feri.entity.pay.Tradelog">
+		<id column="id" property="id" />
+		<result column="uid" property="uid" />
+		<result column="ucid" property="ucid" />
+		<result column="coins" property="coins" />
+		<result column="createtime" property="createtime" />
+	</resultMap>
+
+</mapper>

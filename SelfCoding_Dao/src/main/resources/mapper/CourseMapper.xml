@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feri.dao.course.CourseMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.feri.entity.course.Course">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="tid" property="tid" />
+		<result column="flag" property="flag" />
+		<result column="aid" property="aid" />
+		<result column="info" property="info" />
+		<result column="coins" property="coins" />
+		<result column="discoins" property="discoins" />
+		<result column="createtime" property="createtime" />
+	</resultMap>
+
+</mapper>

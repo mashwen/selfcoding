@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SelfCoding_Api" />
         <module name="SelfCoding_Common" />
         <module name="SelfCoding_Dao" />
         <module name="SelfCoding_Entity" />
