@@ -3,11 +3,20 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_Api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_CloudApi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_Common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_Dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_ElasticsearchApi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_Entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_EurekaServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_FeignZookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_MQSys" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_PayApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_ProviderCourse" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_ProviderUser" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_ProviderVideo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_ProviderZookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SelfCoding_Resource" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_Service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_WebAdmin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SelfCoding_WebApi" charset="UTF-8" />

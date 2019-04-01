@@ -22,7 +22,7 @@ public class Course extends Model<Course> {
 
 	@TableId(value="id", type= IdType.AUTO)
 	private Integer id;
-	private Integer name;
+	private String name;
 	private Integer tid;
 	private Integer flag;
 	private Integer aid;
@@ -31,6 +31,20 @@ public class Course extends Model<Course> {
 	private Integer discoins;
 	private Date createtime;
 
+	@Override
+	public String toString() {
+		return "Course{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", tid=" + tid +
+				", flag=" + flag +
+				", aid=" + aid +
+				", info='" + info + '\'' +
+				", coins=" + coins +
+				", discoins=" + discoins +
+				", createtime=" + createtime +
+				'}';
+	}
 
 	public Integer getId() {
 		return id;
@@ -40,11 +54,11 @@ public class Course extends Model<Course> {
 		this.id = id;
 	}
 
-	public Integer getName() {
+	public String getName() {
 		return name;
 	}
 
-	public void setName(Integer name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 

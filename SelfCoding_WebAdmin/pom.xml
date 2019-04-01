@@ -11,4 +11,17 @@
     <artifactId>SelfCoding_WebAdmin</artifactId>
     <packaging>war</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.feri</groupId>
+            <artifactId>SelfCoding_Common</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+    </dependencies>
 </project>

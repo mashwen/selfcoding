@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/SelfCoding_PayApi" />
     <file type="web" url="file://$PROJECT_DIR$/SelfCoding_ProviderUser" />
     <file type="web" url="file://$PROJECT_DIR$/SelfCoding_WebAdmin" />
     <file type="web" url="file://$PROJECT_DIR$/SelfCoding_WebApi" />

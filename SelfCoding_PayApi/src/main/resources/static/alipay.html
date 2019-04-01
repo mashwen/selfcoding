@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付宝支付测试</title>
+    <script type="application/javascript" src="jquery-2.1.0.min.js"></script>
+</head>
+<body>
+<div>
+    <div>
+        <h1>支付宝支付</h1>
+        <form id="fm1">
+            <label>订单编号：</label><input name="out_trade_no" >
+            <br/>
+            <label>金额：</label><input name="total_amount" >元
+            <br/>
+            <label>商品名称：</label><input name="subject" >
+            <br/>
+            <label>商品描述：</label><input name="body" >
+            <br/>
+            <input type="button" value="确认订单" onclick="pay()">
+        </form>
+        <div id="dvpay" style="display: none">
+            <img src="favicon-16x16.png" id="img1">
+        </div>
+        <div>
+            <label>订单号：</label>
+            <input id="tradeno" type="text">
+            <input type="button" value="查询订单支付状态" onclick="check()">
+        </div>
+
+        <div>
+            <h1>微信支付测试</h1>
+            <form id="fm2">
+                <label>订单编号：</label><input name="orderid" >
+                <br/>
+                <label>金额：</label><input type="number" name="money" >元
+                <br/>
+                <label>商品描述：</label><input name="body" >
+                <br/>
+                <br/>
+                <input type="button" value="确认订单" onclick="wxpay()">
+            </form>
+            <div id="dvpay2" style="display: none">
+                <img src="favicon-16x16.png" id="img2">
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript">
+        function pay() {
+            $.ajax({
+                url:"pay/alipayorder.do",
+                data:$("#fm1").serialize(),
+                method:"post",
+                success:function (obj) {
+                    if(obj.code==1){
+                        $("#dvpay").css("display","block");
+                        $("#fm1").css("display","none");
+                        $("#img1")[0].src=obj.data;
+                    }
+                }
+            })
+        }
+        function wxpay() {
+            $.ajax({
+                url:"pay/wxpayorder.do",
+                data:$("#fm2").serialize(),
+                method:"post",
+                success:function (obj) {
+                    if(obj.code==1){
+                        $("#dvpay2").css("display","block");
+                        $("#fm2").css("display","none");
+                        $("#img2")[0].src=obj.data;
+                    }
+                }
+            })
+        }
+        function check() {
+            $.ajax({
+                url:"pay/alipayquery.do",
+                data:"tradeno="+$("#tradeno").val(),
+                method:"get",
+                success:function (obj) {
+                    if(obj.code==1){
+                        $("#dvpay").css("display","block");
+                        $("#fm1").css("display","none");
+                        $("#img1")[0].src=obj.data;
+                    }
+                }
+            })
+        }
+    </script>
+</div>
+</body>
+</html>

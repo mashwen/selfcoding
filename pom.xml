@@ -18,6 +18,15 @@
         <module>SelfCoding_WebApi</module>
         <module>SelfCoding_WebAdmin</module>
         <module>SelfCoding_Api</module>
+        <module>SelfCoding_Resource</module>
+        <module>SelfCoding_ProviderCourse</module>
+        <module>SelfCoding_CloudApi</module>
+        <module>SelfCoding_EurekaServer</module>
+        <module>SelfCoding_ProviderZookeeper</module>
+        <module>SelfCoding_FeignZookeeper</module>
+        <module>SelfCoding_PayApi</module>
+        <module>SelfCoding_ElasticsearchApi</module>
+        <module>SelfCoding_MQSys</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
