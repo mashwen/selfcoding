@@ -43,7 +43,7 @@
         <selfcoding.verion>1.0</selfcoding.verion>
         <mysql.version>8.0.15</mysql.version>
         <druid.version>1.1.14</druid.version>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
         <fastjson.version>1.2.56</fastjson.version>
         <swagger.version>2.9.2</swagger.version>
         <jedis.version>3.0.1</jedis.version>
